@@ -42,7 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['comment_id'])) {
 <h1>Edit Comment</h1>
 
 <form method="post" action="update_comment.php">
-    <input type="hidden" name="comment_id" value="<?= $comment['comment_id']; ?>">
+<input type="hidden" name="comment_id" value="<?= $comment_id; ?>">
+
+
     
     <label for="username">Username:</label>
     <input type="text" name="username" value="<?= $comment['username']; ?>" readonly>
