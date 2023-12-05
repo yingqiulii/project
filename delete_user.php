@@ -16,6 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['user_id'])) {
     $stmt->execute([$user_id]);
 
     header("Location: admin_dashboard.php");
-    exit()
+    exit();
 }
 ?>
